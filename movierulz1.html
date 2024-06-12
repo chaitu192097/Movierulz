@@ -1,0 +1,600 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="project1.css">
+    <title>Document</title>
+    <style>
+        
+.header,.title,.titleHead,.about,.more,.moreBtn,.search,.bar,.website,.nav,.bookmark{
+   
+}
+.nav,.rajbet,.table{
+    box-shadow: 5px 5px 3px rgba(32, 33, 37, 0.883);
+}
+.nav,.moreBtn,.bookmark,.featured,.week{
+    border: 0.1px solid rgb(61, 64, 73);
+    background: linear-gradient(to bottom,rgba(39, 39, 39, 0.863),rgb(7,7,7));
+}
+body{
+    
+    margin: 0;
+    height: 100vh; 
+    font-family: sans-serif;
+    background: 
+        repeating-linear-gradient(
+            135deg,
+            #34363b, 
+            #34363b 3px, 
+            #23252b 3px, 
+            #23252b 8px 
+        ),
+        #2d2d2d; 
+    color: rgb(125,130,143);
+}
+.website{
+   display: flex;
+   flex-direction:column;
+   justify-content: center;
+   align-items: center; 
+   gap: 3px;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    gap: 150px;
+    padding: 30px 0px;
+    width: 100%;
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 2px;
+    color: rgb(204,207,215);
+    padding: 0px 0px;
+    .titleHead{
+        font-size: 33px;
+        font-weight: lighter;
+        text-align: start;
+        padding-right: 330px;
+      
+    }
+    .about{
+        font-size: 15px;
+    }
+}
+.search{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-left: 130px;
+    .bar{
+        width: 250px;
+        height: 27px;
+        font-size: 14px;
+        background-color: rgb(224, 227, 230);
+        
+    }
+    .searchBtn{
+        width: 80px;
+      height: 25px;
+      font-size: large;
+      font-weight: bold;
+     background-color:rgb(32,32,32) ;
+     color: rgb(152, 158, 172);
+     font-size: 14px;
+    }
+}
+.nav{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 5px 7px;
+    border-radius: 7px;
+    background-color: rgb(32,32,32);
+    margin: 5px 0px;
+    .category{
+     padding: 12px 15px;
+     border-radius: 4px;
+     color: rgb(125,130,143);
+     border: none;
+     font-size: 13px;
+     font-weight: bold;
+     background-color: transparent;
+     
+    }
+}
+.category:hover{
+    background-color: rgb(59, 61, 70);
+    color: white; 
+}
+.bookmark{
+    font-size: 14px;
+    width: 1085px;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid rgb(281,102,16);
+    margin: 5px;
+    background-color:rgb(32,32,32);
+    border-radius: 3px;
+    .band{
+       text-decoration: none;
+       color: rgb(198,6,198);
+       font-weight: 10px;
+    }
+}
+.more{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  .moreBtn{
+    font-size: 14px;
+    color: rgb(125,130,143);
+    font-weight: bold;
+    padding: 5px 16px;
+    border-radius: 5px;
+  }
+}
+.moreBtn:hover{
+    background-color: whitesmoke; 
+    color: white;
+}
+.latest{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 0px 6px;
+    width: fit-content;
+    .movRight,.movLeft{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border: 0.1px solid rgb(61, 64, 73);
+        background-color: rgb(32,34,40);
+        zoom: 1;
+    }
+    .movRight{
+        padding-right: 5px;
+    }
+    .movLeft{
+        padding-right: 5px;
+    }
+    .moviedesR,.moviedesL{
+        font-size: 13px;
+        font-weight: bold;
+        background-color: rgb(17, 17, 17);
+        padding: 7px 0px 8px 8px;
+        width: 505px; 
+        height: 25px; 
+        
+      
+    }
+    .moviedesL{
+        width: 453px;
+    }
+}
+img{
+    width: 50px;
+    height: 45px;
+    padding: 5px 0px 5px 5px;
+}
+.main{
+    width: 1105px;
+    height: auto;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;   
+}
+.rajbet{
+    width: 250px;
+    height: 60px;
+    padding: 15px 22px;
+    background-color: rgb(17,17,17);
+   border:  0.1px solid rgb(61, 64, 73);
+   border-radius: 7px;
+}
+.featured,.week{
+    padding: 10px;
+    border-radius: 7px;
+    font-weight: bold;
+    color: white;
+    margin: 8px 0px;
+}
+.right{
+    
+    background-color:rgb(32,34,40) ;
+    border-radius: 5px;
+}
+.Emov,.Tmov{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.Erow1,.Erow2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(17,17,17);
+    margin: 10px 8px;
+    border: 1px solid rgb(61, 64, 73);
+    border-radius: 7px;
+    .poster{
+        width: 170px;
+        height: auto;
+        padding: 5px;
+        
+        background-color: rgb(17,17,17);
+    }
+    .posterDes{
+        font-size: 13px;
+        width:150px;
+        padding-bottom: 10px;
+        background-color: rgb(17,17,17);
+    }
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 10px;
+    .table{
+        border: 0.1px solid rgb(61, 64, 73);
+        width: 295px;
+        background-color: rgb(17, 17, 17);
+        margin-bottom: 1070px;
+        .recent{
+            font-size: 16px;
+            background-color:rgb(32,34,40) ;
+            padding: 10px;
+            font-weight: bold;
+            color: rgb(193,195,203);
+            border-bottom  : 0.1px solid rgb(61, 64, 73);
+            border-radius: 5px;
+        }
+    }
+    
+}
+.links{
+    margin: 0px 2px;
+    padding: 15px 5px 15px 0px;
+    background-color: rgb(17, 17, 17);
+    border-bottom: 0.1px solid rgb(61, 64, 73);;
+}
+.links1{
+    color: rgb(125,130,143);
+    font-size: 12px;
+    text-decoration: none;   
+}
+.links1:hover{
+    color:red;
+    text-decoration: underline;
+}
+footer{
+    border-top: 2px solid grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(32,34,40);
+    padding-bottom: 20px;
+    margin-top: 40px;
+    .up{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        .upText{
+            margin-top: 15px;
+            font-size: 15px;
+            padding: 10px 8px;
+        }
+        .upText:hover{
+            text-decoration:underline ;
+        }
+        
+    }
+    .down{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 6px;
+        .alt{
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            background-color: rgb(32,34,40);
+            text-decoration: none;
+            color: rgb(125,130,143);
+        }
+        .alt:hover{
+            text-decoration: underline;
+  }
+    }
+    .year
+    {
+        font-size: 16px;
+        font-weight: bold;
+        padding-bottom: 13px;
+        padding-left: 4px;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="website">
+  <div class="header">
+    <div class="title">
+        <div class="titlehead">MovieRulz</div>
+        <div class="about">Watch & Download Telugu Hindi Tamil Malayalam Movies Online Free</div>
+    </div>
+    <div class="search">
+         <input class="bar" type="text" placeholder="search....">
+         <button class="searchBtn">search</button>
+    </div>
+  </div>
+  <div class="nav">
+    <button class="category" style="color: white;
+      background-color: rgb(59, 61, 70);">HOME</button>
+    <button class="category">FEATURED</button>
+    <button class="category">BOLLYWOOD</button>
+    <button class="category">TELUGU</button>
+    <button class="category">TAMIL</button>
+    <button class="category">MALAYALAM</button>
+    <button class="category">HOLLYWOOD</button>
+    <button class="category">OTHERS</button>
+    <button class="category">GENRES</button>
+    <button class="category">DVDRIP</button>
+</div>
+<div class="bookmark">Bookmark Us or Use Full <a class = "band" href=""><span class="5movie">5movierulz.band</span></a>
+   Url, don't search us on google/bing, if any issues let us know
+  </div>
+  <div class="more">
+    <button class="moreBtn">MovierulzApp</button>
+    <button class="moreBtn">Requested</button>
+    <button class="moreBtn">Multi Audio</button>
+    <button class="moreBtn">Adult 18+</button> 
+  </div>
+  <div class="latest">
+    <div class="movRight">
+      <img src="image1.jpg" alt="">
+      <div class="moviedesL">Kalki 2898 AD (2024) Official Trailer [Telugu + Tamil + Hindi + Malayalam + Kannada] Prabhas, Amitabh Bachchan, Kamal Haasan, Deepika–Nag</div>
+  </div>
+    <div class="movLeft">
+      <img src="image2.jpg" alt="">
+      <div class="moviedesR">Saripodhaa Sanivaaram (2024) Official Telugu Glimpse – Nani, Priyanka, SJ Suryah – Vivek Athreya – DVV Danayya</div>
+    </div>
+  </div>
+  <div class="main">
+    <div class="right">
+      <div class="featured">Featured Movies</div>
+      <div class="Emov">
+        <div class="Erow1">
+          <div class="card">
+            <img class="poster" src="Manamey-Telugu-Poster-1.jpg" alt="">
+            <div class="posterDes">Manamey (2024) DVDScr Telugu Full Movie Watch</div>
+          </div>
+          <div class="card">
+            <img class="poster" src="Manamey-Telugu-Poster-1.jpg" alt="">
+            <div class="posterDes">Manamey (2024) DVDScr Telugu Full Movie Watch</div>
+          </div>
+          <div class="card">
+            <img class="poster" src="Manamey-Telugu-Poster-1.jpg" alt="">
+            <div class="posterDes">Manamey (2024) DVDScr Telugu Full Movie Watch</div>
+          </div>
+          <div class="card">
+            <img class="poster" src="Manamey-Telugu-Poster-1.jpg" alt="">
+            <div class="posterDes">Manamey (2024) DVDScr Telugu Full Movie Watch</div>
+          </div>
+        </div>
+        <div class="Erow1">
+          <div class="card">
+            <img class="poster" src="Manamey-Telugu-Poster-1.jpg" alt="">
+            <div class="posterDes">Manamey (2024) DVDScr Telugu Full Movie Watch</div>
+          </div>
+          <div class="card">
+            <img class="poster" src="Manamey-Telugu-Poster-1.jpg" alt="">
+            <div class="posterDes">Manamey (2024) DVDScr Telugu Full Movie Watch</div>
+          </div>
+          <div class="card">
+            <img class="poster" src="Manamey-Telugu-Poster-1.jpg" alt="">
+            <div class="posterDes">Manamey (2024) DVDScr Telugu Full Movie Watch</div>
+          </div>
+          <div class="card">
+            <img class="poster" src="Manamey-Telugu-Poster-1.jpg" alt="">
+            <div class="posterDes">Manamey (2024) DVDScr Telugu Full Movie Watch</div>
+          </div>
+        </div>
+      </div>
+      <div class="week">Week Release</div>
+      <div class="4mov">
+        <div class="Erow1">
+          <div class="card">
+            <img class="poster" src="Manamey-Telugu-Poster-1.jpg" alt="">
+            <div class="posterDes">Manamey (2024) DVDScr Telugu Full Movie Watch</div>
+          </div>
+          <div class="card">
+            <img class="poster" src="Manamey-Telugu-Poster-1.jpg" alt="">
+            <div class="posterDes">Manamey (2024) DVDScr Telugu Full Movie Watch</div>
+          </div>
+          <div class="card">
+            <img class="poster" src="Manamey-Telugu-Poster-1.jpg" alt="">
+            <div class="posterDes">Manamey (2024) DVDScr Telugu Full Movie Watch</div>
+          </div>
+          <div class="card">
+            <img class="poster" src="Manamey-Telugu-Poster-1.jpg" alt="">
+            <div class="posterDes">Manamey (2024) DVDScr Telugu Full Movie Watch</div>
+          </div>
+        </div>
+      </div>
+      <div class="week">Latest Movies</div>
+      <div class="Tmov">
+        <div class="Erow1">
+          <div class="card">
+            <img class="poster" src="Manamey-Telugu-Poster-1.jpg" alt="">
+            <div class="posterDes">Manamey (2024) DVDScr Telugu Full Movie Watch</div>
+          </div>
+          <div class="card">
+            <img class="poster" src="Manamey-Telugu-Poster-1.jpg" alt="">
+            <div class="posterDes">Manamey (2024) DVDScr Telugu Full Movie Watch</div>
+          </div>
+          <div class="card">
+            <img class="poster" src="Manamey-Telugu-Poster-1.jpg" alt="">
+            <div class="posterDes">Manamey (2024) DVDScr Telugu Full Movie Watch</div>
+          </div>
+          <div class="card">
+            <img class="poster" src="Manamey-Telugu-Poster-1.jpg" alt="">
+            <div class="posterDes">Manamey (2024) DVDScr Telugu Full Movie Watch</div>
+          </div>
+        </div><div class="Erow1">
+          <div class="card">
+            <img class="poster" src="Manamey-Telugu-Poster-1.jpg" alt="">
+            <div class="posterDes">Manamey (2024) DVDScr Telugu Full Movie Watch</div>
+          </div>
+          <div class="card">
+            <img class="poster" src="Manamey-Telugu-Poster-1.jpg" alt="">
+            <div class="posterDes">Manamey (2024) DVDScr Telugu Full Movie Watch</div>
+          </div>
+          <div class="card">
+            <img class="poster" src="Manamey-Telugu-Poster-1.jpg" alt="">
+            <div class="posterDes">Manamey (2024) DVDScr Telugu Full Movie Watch</div>
+          </div>
+          <div class="card">
+            <img class="poster" src="Manamey-Telugu-Poster-1.jpg" alt="">
+            <div class="posterDes">Manamey (2024) DVDScr Telugu Full Movie Watch</div>
+          </div>
+        </div><div class="Erow1">
+          <div class="card">
+            <img class="poster" src="Manamey-Telugu-Poster-1.jpg" alt="">
+            <div class="posterDes">Manamey (2024) DVDScr Telugu Full Movie Watch</div>
+          </div>
+          <div class="card">
+            <img class="poster" src="Manamey-Telugu-Poster-1.jpg" alt="">
+            <div class="posterDes">Manamey (2024) DVDScr Telugu Full Movie Watch</div>
+          </div>
+          <div class="card">
+            <img class="poster" src="Manamey-Telugu-Poster-1.jpg" alt="">
+            <div class="posterDes">Manamey (2024) DVDScr Telugu Full Movie Watch</div>
+          </div>
+          <div class="card">
+            <img class="poster" src="Manamey-Telugu-Poster-1.jpg" alt="">
+            <div class="posterDes">Manamey (2024) DVDScr Telugu Full Movie Watch</div>
+          </div>
+        </div><div class="Erow1">
+          <div class="card">
+            <img class="poster" src="Manamey-Telugu-Poster-1.jpg" alt="">
+            <div class="posterDes">Manamey (2024) DVDScr Telugu Full Movie Watch</div>
+          </div>
+          <div class="card">
+            <img class="poster" src="Manamey-Telugu-Poster-1.jpg" alt="">
+            <div class="posterDes">Manamey (2024) DVDScr Telugu Full Movie Watch</div>
+          </div>
+          <div class="card">
+            <img class="poster" src="Manamey-Telugu-Poster-1.jpg" alt="">
+            <div class="posterDes">Manamey (2024) DVDScr Telugu Full Movie Watch</div>
+          </div>
+          <div class="card">
+            <img class="poster" src="Manamey-Telugu-Poster-1.jpg" alt="">
+            <div class="posterDes">Manamey (2024) DVDScr Telugu Full Movie Watch</div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="left">
+        <img class="rajbet" src="raj-bet.jpg" alt="">
+        <div class="table">
+          <div class="recent">Recent Upadated Movies</div>
+          <div class="links">
+            <a class="links1" href="">>>Paarijatha Parvam (2024) HDRip Telugu Full Movie Watch Online Free</a>
+          </div>
+          <div class="links">
+            <a class="links1" href="">>>IP Man And Four Kings (2021) HDRip Original [Telugu + Tamil + Hindi] Dubbed Movie Watch Online Free</a>
+          </div>
+          <div class="links">
+            <a class="links1" href="">>>Paarijatha Parvam (2024) HDRip Telugu Full Movie Watch Online Free</a>
+          </div>
+          <div class="links">
+            <a class="links1" href="">>>Paarijatha Parvam (2024) HDRip Telugu Full Movie Watch Online Free</a>
+          </div>
+          <div class="links">
+            <a class="links1" href="">>>Paarijatha Parvam (2024) HDRip Telugu Full Movie Watch Online Free</a>
+          </div>
+          <div class="links">
+            <a class="links1" href="">>>Paarijatha Parvam (2024) HDRip Telugu Full Movie Watch Online Free</a>
+          </div>
+          <div class="links">
+            <a class="links1" href="">>>Paarijatha Parvam (2024) HDRip Telugu Full Movie Watch Online Free</a>
+          </div>
+          <div class="links">
+            <a class="links1" href="">>>Paarijatha Parvam (2024) HDRip Telugu Full Movie Watch Online Free</a>
+          </div>
+
+          <div class="links">
+            <a class="links1" href="">>>Paarijatha Parvam (2024) HDRip Telugu Full Movie Watch Online Free</a>
+          </div>
+
+          <div class="links">
+            <a class="links1" href="">>>Paarijatha Parvam (2024) HDRip Telugu Full Movie Watch Online Free</a>
+          </div>
+          <div class="links">
+            <a class="links1" href="">>>Paarijatha Parvam (2024) HDRip Telugu Full Movie Watch Online Free</a>
+          </div>
+          <div class="links">
+            <a class="links1" href="">>>Paarijatha Parvam (2024) HDRip Telugu Full Movie Watch Online Free</a>
+          </div>
+          <div class="links">
+            <a class="links1" href="">>>Paarijatha Parvam (2024) HDRip Telugu Full Movie Watch Online Free</a>
+          </div>
+          <div class="links">
+            <a class="links1" href="">>>Paarijatha Parvam (2024) HDRip Telugu Full Movie Watch Online Free</a>
+          </div>
+          <div class="links">
+            <a class="links1" href="">>>Paarijatha Parvam (2024) HDRip Telugu Full Movie Watch Online Free</a>
+          </div>
+          <div class="links">
+            <a class="links1" href="">>>Paarijatha Parvam (2024) HDRip Telugu Full Movie Watch Online Free</a>
+          </div>
+        </div>
+      </div>
+    </div> 
+  </div>
+  <footer>
+    <div class="up">
+      <div class="upText">MIRROR LIST</div>
+      <div class="upText">DMCA</div>
+      <div class="upText">CONTACT US</div>
+    </div>
+    <div class="down">
+      <a class="alt"  href="#">MovieRulz</a>
+      <a class="alt"  href="#">4MovieRulz</a>
+      <a class="alt"  href="#">7MovieRulz</a>
+      <div class="year"><i> c</i>2023</div>
+    </div>
+  </footer>   
+</body>
+</html>
